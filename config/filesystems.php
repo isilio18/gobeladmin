@@ -64,6 +64,13 @@ return [
             'url' => env('AWS_URL'),
             'endpoint' => env('AWS_ENDPOINT'),
         ],
+        'ftp' => [
+            'driver'   => 'ftp',
+            'host'     => env('FTP_HOST', '127.0.0.1'),
+            'username' => env('FTP_USERNAME', 'laravel'),
+            'password' => env('FTP_PASSWORD', 'laravel'),
+            'port'     => env('FTP_PORT', '21'),
+        ],
 
     ],
 
